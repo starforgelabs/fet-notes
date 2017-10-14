@@ -1,37 +1,61 @@
-## Welcome to GitHub Pages
+## FET Notes
 
-You can use the [editor on GitHub](https://github.com/starforgelabs/fet-notes/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+1.  Bipolar Junction Transistors (BJTs) are controlled by current. 
+1.  Field-Effect Transistors (FETs) are controlled by voltage. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### On
 
-### Markdown
+When FETs are turned on, current can flow **both ways** 
+between the source and drain. 
+Thus, they can be used with alternating current (AC). 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Off
 
-```markdown
-Syntax highlighted code block
+When FETs are turned off, FETs act as diodes. 
+This "body diode" is a natural result of how they are constructed.
+Sometimes the body diode is indicated on the FET symbol. 
 
-# Header 1
-## Header 2
-### Header 3
+TODO: drawings
 
-- Bulleted
-- List
+To cut off voltage completely, 
+use two FETs with their body diodes pointing in opposite directions.
 
-1. Numbered
-2. List
+TODO: drawings
 
-**Bold** and _Italic_ and `Code` text
+### Modes
 
-[Link](url) and ![Image](src)
-```
+FETs can be made in two modes, 
+enhancement mode and
+depletion mode. 
+Enhancement mode is the most common. 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+| Enhancement Mode | Depletion Mode |
+| ---------------- | -------------- |
+| Normally off          | Normally On |
+| Gate turns on         | Get turns off |
+| TODO: PICTURE         | TODO: picture |
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/starforgelabs/fet-notes/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### P/N Uses
 
-### Support or Contact
+The terms "sufficiently negative" and "sufficiently positive" 
+are compared to the drain/source voltage. 
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+| | P-channel | | N-channel |
+| --- | --- | --- | --- |
+| | TODO: PICTURE | | TODO: PICTURE |
+| 0 | "On" = the gain is "sufficiently negative" | 1 | "On" = gain is "sufficiently positive" | 
+| 1 | "Off" = negative voltage removed | 0 | "Off" = positive voltage removed |
+| | TODO: PICTURE | | TODO: PICTURE |
+| 1 | "On" = negative voltage removed | 0 | "Off" = positive voltage removed |
+| 0 | "Off" = the gain is "sufficiently negative" | 1 | "On" = gain is "sufficiently positive" | 
+
+
+
+
+
+#### What Is This?
+
+These are brief personal notes. 
+Comments are corrections are always welcome.
+
